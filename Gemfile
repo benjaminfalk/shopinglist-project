@@ -8,6 +8,9 @@ gem 'rails', '3.2.13'
 group :development, :test do
     gem 'sqlite3'
     gem "rspec-rails", "~> 2.0"
+    gem "guard-rspec", "2.5.1"
+    gem "rb-fsevent", "~> 0.9", :require => false
+    gem "growl", "1.0.3"
 end
 group :production do
    gem 'pg'
