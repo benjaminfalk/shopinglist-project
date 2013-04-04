@@ -1,6 +1,12 @@
 Shoppinglist::Application.routes.draw do
   get "home/index"
   root :to => 'home#index'
+  match '/home/about', :controller => 'home', :id => 'about', :as => :about
+  match '/login/index', :controller => 'login', :action => 'index', :as => :login
+  match '/login/create', :controller => 'login', :action => 'create', :as => :login_create
+
+  #map.about 'home/about', :controller => 'home', :action => 'show', :id => 'about'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
