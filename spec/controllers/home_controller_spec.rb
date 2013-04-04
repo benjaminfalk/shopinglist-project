@@ -4,9 +4,9 @@ describe HomeController do
 
   describe "Home page" do
     it "should have title 'Shoppinglist'" do
-      get 'index'
+      visit root_path
       
-      response.should have_css("title", :text  => "Shoppinglist")
+      response.should have_selector("title", :text  => "Shoppinglist")
      
     end
 #    it "should have the h1 'Sample App'" do
