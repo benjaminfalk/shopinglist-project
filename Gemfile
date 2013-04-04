@@ -11,7 +11,7 @@ group :development, :test do
     gem "capybara", "2.0.3"
     gem "guard-rspec", "2.5.1"
     gem "rb-fsevent", "~> 0.9", :require => false
-   # gem "growl", "1.0.3"
+    gem 'annotate', '2.5.0'
 end
 group :production do
    gem 'pg'

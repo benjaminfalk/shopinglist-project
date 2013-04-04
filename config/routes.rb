@@ -1,4 +1,6 @@
 Shoppinglist::Application.routes.draw do
+  get "users/new"
+
   get "home/index"
   root :to => 'home#index'
   match '/home/about', :controller => 'home', :id => 'about', :as => :about
